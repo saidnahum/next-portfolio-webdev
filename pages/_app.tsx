@@ -1,3 +1,4 @@
+import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 import '../styles/globals.css'
 
@@ -7,7 +8,8 @@ function MyApp({ Component, pageProps }) {
 			<div className='col-span-12 lg:col-span-3 bg-white rounded-2xl p-4 text-center'>
 				<Sidebar/>
 			</div>
-			<div className='col-span-12 lg:col-span-9 bg-white rounded-2xl'>
+			<div className='col-span-12 lg:col-span-9 bg-white rounded-2xl flex flex-col overflow-hidden'>
+				<Navbar/>
 				<Component {...pageProps} />
 			</div>
 		</div>

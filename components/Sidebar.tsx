@@ -29,8 +29,7 @@ const Sidebar = () => {
 
          <p className='bg-gray-200 px-2 py-1 my-3 rounded-full'>Web Developer</p>
          <a className='bg-gray-200 px-2 py-1 rounded-full flex items-center justify-center cursor-pointer' download='name'> 
-            <TieIcon className='w-6 h-6'/>
-            Download Resume
+            <TieIcon className='w-6 h-6'/> Download Resume
          </a>
 
          {/* Social Icons */}
@@ -51,8 +50,7 @@ const Sidebar = () => {
          {/* Adress */}
          <div className='my-5 py-4 bg-gray-200 ml-[-1rem] mr-[-1rem]'>
             <div className='flex items-center justify-center space-x-2'>
-               <LocationIcon/>
-               <span>Ciudad de México, México</span>
+               <LocationIcon/> <span>Ciudad de México, México</span>
             </div>
             <p className='my-2'>{email}</p>
             <p className='my-2'>5530784358</p>
