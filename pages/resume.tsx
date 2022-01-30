@@ -1,9 +1,11 @@
 import Head from 'next/head';
 import React from 'react';
+import Bar from '../components/Bar';
+import { languages, tools } from '../services/data';
 
 const resume = () => {
    return (
-      <div className='p-4'>
+      <div className='px-6 py-2'>
          <Head>
 				<title>SaidN | Resume</title>
 			</Head>
@@ -31,6 +33,27 @@ const resume = () => {
          </div>
 
          {/* Languages and tools */}
+         <div className='grid gap-6 md:grid-cols-2'>
+            <div>
+               <h5 className='my-3 text-2xl font-bold'>Languages & Frameworks</h5>
+
+               <div className='my-2'>
+                  {
+                     languages.map((language, index) => (<Bar data={language} key={index}/>))
+                  }
+               </div>
+            </div>
+
+            <div>
+               <h5 className='my-3 text-2xl font-bold'>Tools & Softwares</h5>
+
+               <div className='my-2'>
+                  {
+                     tools.map((tool, index) => (<Bar data={tool} key={index}/>))
+                  }
+               </div>
+            </div>
+         </div>
       </div>
    )
 };

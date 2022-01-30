@@ -19,13 +19,13 @@ export default function Home() {
 				Web Development
 			</h5>
 
-			<div className='p-4 mt-5 bg-gray-400 ml-[-1.5rem] mr-[-1.5rem] flex-grow'>
-				<h6 className='my-3 text-xl font-bold tracking-wide'>What I Offer</h6>
+			<div className='p-4 mt-5 bg-gray-400 dark:bg-dark-100 ml-[-1.5rem] mr-[-1.5rem] flex-grow'>
+				<h6 className='my-5 mb-10 text-xl font-bold tracking-wide'>What I Offer</h6>
 				
 				<div className='grid lg:grid-cols-2 gap-6'>
 					{
 						services.map((service, index) => (
-							<div key={index} className='lg:col-span-1 bg-gray-200 rounded-lg'>
+							<div key={index} className='lg:col-span-1 bg-gray-200 dark:bg-dark-200 rounded-lg'>
 								<ServiceCard service={service}/>
 							</div>
 						))

@@ -4,8 +4,15 @@ import profile from '../assets/img/said.jpeg';
 import { AiFillGithub as GithubIcon, AiFillLinkedin as LinkedinIcon, AiFillYoutube as YoutubeICon } from 'react-icons/ai'
 import { GoLocation as LocationIcon } from 'react-icons/go'
 import { GiTie as TieIcon} from 'react-icons/gi'
+import { useTheme } from 'next-themes'
 
 const Sidebar = () => {
+
+   const { theme, setTheme } = useTheme();
+
+   const changeTheme = () => {
+      setTheme(theme==='light' ? 'dark' : 'light')
+   }
 
    const email = 'saidn@gmail.com';
 
@@ -27,8 +34,8 @@ const Sidebar = () => {
             <span className='text-green'>Said</span> Nahum
          </h3>
 
-         <p className='bg-gray-200 px-2 py-1 my-3 rounded-full'>Web Developer</p>
-         <a className='bg-gray-200 px-2 py-1 rounded-full flex items-center justify-center cursor-pointer' download='name'> 
+         <p className='bg-gray-200 dark:bg-dark-200 px-2 py-1 my-3 rounded-full'>Web Developer</p>
+         <a className='bg-gray-200 dark:bg-dark-200 px-2 py-1 rounded-full flex items-center justify-center cursor-pointer' download='name'> 
             <TieIcon className='w-6 h-6'/> Download Resume
          </a>
 
@@ -48,7 +55,7 @@ const Sidebar = () => {
          </div>
 
          {/* Adress */}
-         <div className='my-5 py-4 bg-gray-200 ml-[-1rem] mr-[-1rem]'>
+         <div className='my-5 py-4 bg-gray-200 dark:bg-dark-200 ml-[-1rem] mr-[-1rem]'>
             <div className='flex items-center justify-center space-x-2'>
                <LocationIcon/> <span>Ciudad de México, México</span>
             </div>
@@ -64,8 +71,13 @@ const Sidebar = () => {
             Emal me
          </button>
 
-         <button className='bg-gradient-to-r from-green to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2'>
-            Dark UI
+         <button 
+            className='bg-gradient-to-r from-green to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2'
+            onClick={changeTheme}
+         >
+            {
+               theme === 'light' ? 'Dark UI' : 'Light UI'
+            }
          </button>
       </div>
    )
