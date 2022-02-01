@@ -35,7 +35,12 @@ const Sidebar = () => {
          </h3>
 
          <p className='bg-gray-200 dark:bg-dark-200 px-2 py-1 my-3 rounded-full'>Web Developer</p>
-         <a className='bg-gray-200 dark:bg-dark-200 px-2 py-1 rounded-full flex items-center justify-center cursor-pointer' download='name'> 
+         <a 
+            className='bg-gray-200 dark:bg-dark-200 px-2 py-1 rounded-full flex items-center justify-center cursor-pointer' 
+            href='/docs/Said Montes CV 2019.pdf'
+            download='CV Said.pdf'
+
+         > 
             <TieIcon className='w-6 h-6'/> Download Resume
          </a>
 

@@ -15,6 +15,7 @@ export interface ISkill {
 export type Category = "react" | "node" | "express" | "django" | "mongo";
 
 export interface IProject {
+   id: number
    name: string
    description: string
    image_path: string

@@ -3,11 +3,14 @@ import Head from 'next/head';
 import React from 'react';
 import { services } from '../services/data';
 import ServiceCard from '../components/ServiceCard';
+import { motion } from 'framer-motion';
+import { fadeInUp, routeAnimation, stagger } from '../services/animations';
 
-export default function Home() {
+export default function Home({endpoint}) {
+		//console.log(endpoint);
 		
 	return (
-		<div className='flex flex-col px-6 pt-1 flex-grow'>
+		<motion.div className='flex flex-col px-6 pt-1 flex-grow' variants={routeAnimation} initial='initial' animate='animate' exit='exit'>
 			<Head>
 				<title>SaidN | About</title>
 			</Head>
@@ -22,31 +25,35 @@ export default function Home() {
 			<div className='p-4 mt-5 bg-gray-400 dark:bg-dark-100 ml-[-1.5rem] mr-[-1.5rem] flex-grow'>
 				<h6 className='my-5 mb-10 text-xl font-bold tracking-wide'>What I Offer</h6>
 				
-				<div className='grid lg:grid-cols-2 gap-6'>
+				<motion.div className='grid lg:grid-cols-2 gap-6' variants={stagger} initial='initial' animate='animate'>
 					{
 						services.map((service, index) => (
-							<div key={index} className='lg:col-span-1 bg-gray-200 dark:bg-dark-200 rounded-lg'>
+							<motion.div 
+								key={index} 
+								className='lg:col-span-1 bg-gray-200 dark:bg-dark-200 rounded-lg' 
+								variants={fadeInUp}
+							>
 								<ServiceCard service={service}/>
-							</div>
+							</motion.div>
 						))
 					}
-				</div>
+				</motion.div>
 			</div>
-		</div>
+		</motion.div>
 	)
 }
 
 // export const getServerSideProps = async (context: GetServerSideProps) => {
 
-// 	const res = fetch('http://localhost:3000/api/services');
-// 	const data = await (await res).json();
+// 	//const res = fetch(`${process.env.VERCEL_URL}/api/services`);
+// 	//const data = await (await res).json();
 
-// 	console.log('SERVER', services);
+// 	//console.log('SERVER', services);
 	
 
 // 	return {
 // 		props: {
-// 			services: data.services
+// 			endpoint: process.env.VERCEL_URL
 // 		}
 // 	}
 // }
@@ -56,7 +63,7 @@ export default function Home() {
 // 	const res = fetch('http://localhost:3000/api/services');
 // 	const data = await (await res).json();
 
-// 	console.log('SERVER', services);
+// 	console.log('SERVER', data);
 	
 
 // 	return {
