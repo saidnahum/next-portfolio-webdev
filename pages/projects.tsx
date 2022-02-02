@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import Head from 'next/head';
 import React, { useState } from 'react';
-import ProjectCard from '../components/ProjectCard';
+import ProjectCardModal from '../components/ProjectCardModal';
 import ProjectsNavbar from '../components/ProjectsNavbar';
 import { fadeInUp, routeAnimation, stagger } from '../services/animations';
 import { projects as projectsData } from '../services/data';
@@ -12,7 +12,7 @@ const Projects = () => {
    const [projects, setProjects] = useState(projectsData);
    const [active, setActive] = useState("all");
 
-   const [showDetail, setShowDetail] = useState<number|null>(null);
+   const [showDetail, setShowDetail] = useState<number | null>(null);
 
    const handlerFilterCategory = (category: Category | "all") => {
       if (category === "all") {
@@ -34,7 +34,7 @@ const Projects = () => {
             <title>SaidN | Projects</title>
          </Head>
 
-         <ProjectsNavbar handlerFilterCategory={handlerFilterCategory} active={active}/>
+         <ProjectsNavbar handlerFilterCategory={handlerFilterCategory} active={active} />
 
          <motion.div className='grid grid-cols-12 gap-4 my-3 relative' variants={stagger} initial='initial' animate='animate'>
             {
@@ -44,7 +44,7 @@ const Projects = () => {
                      className='col-span-12 sm:col-span-6 lg:col-span-4 p-2 bg-gray-200 dark:bg-dark-200 rounded-lg'
                      variants={fadeInUp}
                   >
-                     <ProjectCard project={project} showDetail={showDetail} setShowDetail={setShowDetail}/>
+                     <ProjectCardModal project={project} showDetail={showDetail} setShowDetail={setShowDetail} />
                   </motion.div>
                ))
             }
