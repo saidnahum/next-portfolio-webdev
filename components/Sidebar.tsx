@@ -34,14 +34,14 @@ const Sidebar = () => {
             <span className='text-green'>Said</span> Nahum
          </h3>
 
-         <p className='bg-gray-200 dark:bg-dark-200 px-2 py-1 my-3 rounded-full'>Web Developer</p>
+         <p className='bg-gray-200 dark:bg-dark-200 px-2 py-1 my-3 rounded-full'>Desarrollador Web</p>
          <a 
             className='bg-gray-200 dark:bg-dark-200 px-2 py-1 rounded-full flex items-center justify-center cursor-pointer' 
             href='/docs/Said Montes CV 2019.pdf'
             download='CV Said.pdf'
 
          > 
-            <TieIcon className='w-6 h-6'/> Download Resume
+            <TieIcon className='w-6 h-6'/> Descargar CV
          </a>
 
          {/* Social Icons */}
@@ -73,7 +73,7 @@ const Sidebar = () => {
             className='bg-gradient-to-r from-green to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2 focus:outline-none'
             onClick={() => window.open(`mailto:${email}`)}
          >
-            Emal me
+            Contacto
          </button>
 
          <button 

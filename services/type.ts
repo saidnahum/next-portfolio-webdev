@@ -12,7 +12,7 @@ export interface ISkill {
    Icon:IconType
 }
 
-export type Category = "react" | "node" | "express" | "django" | "mongo";
+export type Category = "react" | "node" | "express" | "tailwind" | "mongo" | "css" | "styled" | "spa" | "next" | "cms" | "javascript";
 
 export interface IProject {
    id: number

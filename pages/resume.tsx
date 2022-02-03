@@ -17,20 +17,20 @@ const resume = () => {
          {/* Education and experience */}
          <div className='grid gap-6 md:grid-cols-2'>
             <motion.div variants={fadeInUp} initial='initial' animate='animate'>
-               <h5 className='my-3 text-2xl font-bold'>Education</h5>
+               <h5 className='my-3 text-2xl font-bold'>Educación</h5>
                <div>
-                  <h5 className='my-2 text-xl font-bold'>Computer Science Engineering</h5>
-                  <p className='font-semibold'>Academy of Technology (2017-2011)</p>
-                  <p className='my-3'>I am currently pursuing B.tech in Computer Science Engineering from Academy of Technology.</p>
+                  <h5 className='my-2 text-xl font-bold'>Ing. Geofísico</h5>
+                  <p className='font-semibold'>Instituto Politécnico Nacional (2007-2011)</p>
+                  <p className='my-3'>Maestría en Geociencias y Administración de los Recursos Naturales (2013-2015)</p>
                </div>
             </motion.div>
 
             <motion.div variants={fadeInUp} initial='initial' animate='animate'>
-               <h5 className='my-3 text-2xl font-bold'>Experience</h5>
+               <h5 className='my-3 text-2xl font-bold'>Experiencia Freelancer</h5>
                <div>
-                  <h5 className='my-2 text-xl font-bold'>Software Engineering Jr</h5>
-                  <p className='font-semibold'>TCS (2011 - 2020)</p>
-                  <p className='my-3'>Beta tester for petrophysics software for a Mexican oil company.</p>
+                  <h5 className='my-2 text-xl font-bold'>Desarrollador Web</h5>
+                  <p className='font-semibold'>(2018 - 2022)</p>
+                  <p className='my-3'>Desarrollo de páginas Web, Sistemas Gestores de Contenido CMS y Portafolios de Trabajo</p>
                </div>
             </motion.div>
          </div>
@@ -38,7 +38,7 @@ const resume = () => {
          {/* Languages and tools */}
          <div className='grid gap-6 md:grid-cols-2'>
             <div>
-               <h5 className='my-3 text-2xl font-bold'>Languages & Frameworks</h5>
+               <h5 className='my-3 text-2xl font-bold'>Lenguajes & Frameworks</h5>
 
                <div className='my-2'>
                   {
@@ -48,7 +48,7 @@ const resume = () => {
             </div>
 
             <div>
-               <h5 className='my-3 text-2xl font-bold'>Tools & Softwares</h5>
+               <h5 className='my-3 text-2xl font-bold'>Herramientas & Softwares</h5>
 
                <div className='my-2'>
                   {

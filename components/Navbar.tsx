@@ -10,9 +10,9 @@ const Navbar = () => {
    const { pathname } = useRouter();
 
    useEffect(() => {
-      if(pathname == '/'){ setActiveItem('About') }
-      if(pathname == '/projects'){ setActiveItem('Projects') }
-      if(pathname == '/resume'){ setActiveItem('Resume') }
+      if(pathname == '/'){ setActiveItem('Acerca') }
+      if(pathname == '/projects'){ setActiveItem('Proyectos') }
+      if(pathname == '/resume'){ setActiveItem('Resumen') }
    },[])
 
    return (
@@ -20,9 +20,9 @@ const Navbar = () => {
          <span className='font-bold text-green text-xl md:text-2xl border-b-4'>{activeItem}</span>
 
          <div className='text-lg flex space-x-5'>
-            <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name='About' route='/'/>
-            <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name='Projects' route='/projects'/>
-            <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name='Resume' route='/resume'/>
+            <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name='Acerca' route='/'/>
+            <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name='Proyectos' route='/projects'/>
+            <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name='Resumen' route='/resume'/>
          </div>
       </div>
    )

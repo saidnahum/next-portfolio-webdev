@@ -66,7 +66,7 @@ const ProjectCardModal: FunctionComponent<{
                         leaveFrom="opacity-100"
                         leaveTo="opacity-0"
                      >
-                        <Dialog.Overlay className="fixed inset-0" />
+                        <Dialog.Overlay className="fixed inset-0 bg-black opacity-40" />
                      </Transition.Child>
 
                      {/* This element is to trick the browser into centering the modal contents. */}
@@ -104,7 +104,7 @@ const ProjectCardModal: FunctionComponent<{
                                     </a>
 
                                     <a href={deployed_url} className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200 rounded-lg hover:bg-gray-300 dark:hover:bg-dark-700">
-                                       <AiFillProject /> <span>Project</span>
+                                       <AiFillProject /> <span>Sitio</span>
                                     </a>
                                  </motion.div>
                               </motion.div>

@@ -9,71 +9,78 @@ import { ISkill } from './type'
 export const services: IService[] = [
    {
       Icon: RiComputerLine,
-      title: "Frontend Development",
+      title: "Desarrollo Frontend",
       description:
-         "I can build a beautiful and scalable SPA using <b> HTML</b>,<b>CSS</b>   and <b>React.js</b> ",
+         "Creación de SPA escalables y responsivas utilizando <b> HTML</b>, <b>CSS</b>   and <b>React.js</b> como base.",
    },
    {
       Icon: FaServer,
-      title: "Backend  Development",
+      title: "Desarrollo Backend",
       description:
-         "handle database, server, api using <b>Express </b> & other popular frameworks",
+         "Manejo de Bases de Datos, Servidores, API's utilizando <b>Express </b> & otros Frameworks",
    },
    {
       Icon: AiOutlineApi,
-      title: "API Development",
+      title: "Desarrollo de API's",
       description:
-         "I can develop robust  REST API using <b>django-rest-api</b>  & <b>Node API</b> ",
+         "Desarrolo de API's utilizando <b>Mongo DB</b>  , <b>Node Js</b>  y <b>Headles CMS.<b>",
    },
    {
       Icon: MdDeveloperMode,
-      title: "Competitive Coder",
-      description: "a daily problem solver in <b>HackerRank</b>  and <b>Leet Code</b> ",
+      title: "Desarrollo Competitivo",
+      description: "Desarrollo utilizando las <b>buenas prácticas</b> para resolver problemas de la necesidad del usuario.",
    },
    {
       Icon: AiOutlineAntDesign,
-      title: "UI/UX designer",
+      title: "Diseño UI/UX",
       description:
-         "stunning user interface designer using <b>Figma</b>  and  <b>Framer</b> ",
+         "Desarrollo de interfaces de usuario utilizando <b>Figma</b> y <b>plantillas</b> Web Responsivas.",
    },
    {
       Icon: RiComputerLine,
-      title: "Whatever",
+      title: "Aplicaciones Multi Plataforma",
       description:
-         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis minima autem!",
+         "Desarrollo de Aplicaciones Multiplataforma (Android e iOS) con <b>React Native</b> y <b>Flutter.</b>",
    }
 ]
 
 export const languages: ISkill[] = [
    {
       Icon: BsCircleFill,
-      name: "Python",
-      level: "45",
-   },
-   {
-      Icon: BsCircleFill,
-      name: "Java Script",
-      level: "60",
-   },
-   {
-      Icon: BsCircleFill,
-      name: "React Native",
-      level: "80",
-   },
-   {
-      Icon: BsCircleFill,
-      name: "React",
+      name: "JavaScript",
       level: "70",
    },
    {
       Icon: BsCircleFill,
-      name: "Django",
-      level: "80",
+      name: "PHP",
+      level: "60",
+   },
+   {
+      Icon: BsCircleFill,
+      name: "Python",
+      level: "50",
+   },
+   {
+      Icon: BsCircleFill,
+      name: "React Js",
+      level: "60",
+   },
+
+   {
+      Icon: BsCircleFill,
+      name: "Vue Js",
+      level: "60",
    },
    {
       Icon: BsCircleFill,
       name: "Bootstrap",
-      level: "80",
+      level: "60",
+   },
+
+   {
+      Icon: BsCircleFill,
+      name: "Tailwind CSS",
+      level: "75",
    },
 ];
 
@@ -81,7 +88,7 @@ export const tools: ISkill[] = [
    {
       Icon: BsCircleFill,
       name: "Figma",
-      level: "85",
+      level: "65",
    },
    {
       Icon: BsCircleFill,
@@ -95,7 +102,7 @@ export const tools: ISkill[] = [
    },
    {
       Icon: BsCircleFill,
-      name: "Framer",
+      name: "Capture One",
       level: "45",
    },
 ];
@@ -103,109 +110,105 @@ export const tools: ISkill[] = [
 export const projects: IProject[] = [
    {
       id: 1,
-      name: "COVID Tracker",
+      name: "Hulu Clone",
       description:
-         "This app shows a statistical view about corona virus over the world",
-      image_path: "/images/covid.jpg",
-      deployed_url: "https://covid-19-tracker-by-sumit.web.app/",
-      github_url: "https://github.com/Dey-Sumit/covid-19-tracker",
-      category: ["react"],
-      tags: ["React", "Chart.js", "Material UI"],
+         "Clon del sitio Hulu desarrollado con React JS y Tailwind CSS.",
+      image_path: "/images/hulu.png",
+      deployed_url: "https://hulu.saidn.ml",
+      github_url: "https://github.com/saidnahum/prod-hulu-clone",
+      category: ["react", "tailwind"],
+      tags: ["React JS", "Tailwind", "API"],
    },
    {
       id: 2,
-      name: "Algorithm Visualizer",
-      image_path: "/images/algoVisual.png",
-      deployed_url: "https://visual-algorithm.web.app/",
-      github_url: "https://github.com/Dey-Sumit/algorithm-visualizer",
-      category: ["react"],
+      name: "La Pizzería",
+      image_path: "/images/pizza.png",
+      deployed_url: "https://pizza.saidn.ml",
+      github_url: "https://github.com/saidnahum/prod-react-pizza-app",
+      category: ["react", "styled", "spa"],
       description:
-         "An web app which shows how an algorithm (path finding or sorting) works with cool animation",
-      tags: ["React", "firebase", "Framer Motion"],
+         "Aplicacion/Página Web adaptada a dispositivos móviles para un Restaurante de Pizzas y Ensaladas",
+      tags: ["React", "Styled Components", "SPA"],
    },
 
    {
       id: 3,
-      name: "Dev Talks",
-      image_path: "/images/dev.jpg",
-      deployed_url: "https://dev-talks.herokuapp.com/",
-      github_url: "https://github.com/Dey-Sumit/Dev-talks",
-      category: ["node", "mongo", "react"],
+      name: "TRAVLR",
+      image_path: "/images/travel.png",
+      deployed_url: "https://travel.saidn.ml",
+      github_url: "https://github.com/saidnahum/prod-react-travel-app",
+      category: ["react", "css"],
       description:
-         "Social Media app for developers who can share project,create posts,etc...",
-      tags: [
-         "React",
-         "Redux",
-         "Node",
-         "Express",
-         "Mongo",
-         "REST API",
-         "Bootstrap",
-      ],
+         "Página Web para una Agencia de Viajes llena de Aventuras y Destinos",
+      tags: ["React JS", "CSS"],
    },
 
    {
       id: 4,
-      name: "Realtime Chat App",
-      image_path: "/images/chatapp.jpg",
-      deployed_url: "https://sumit-chat.netlify.app/",
-      github_url: "https://github.com/Dey-Sumit/chat-app-socket.io-react-node",
-      category: ["node", "react"],
+      name: "Agencia Creativa",
+      image_path: "/images/agencia.png",
+      deployed_url: "https://agencia.saidn.ml/",
+      github_url: "https://github.com/saidnahum/prod-react-agency-app",
+      category: ["react", "styled", "spa"],
       description:
-         "Basic Realtime Chat App where one can create a room can talk to each other",
-      tags: ["React", "Node", "Express", "Socket", "Bootstrap"],
+         "Página Web para una Agencia Creativa de Desarrollo de Proyectos Empresariales",
+      tags: ["React", "Styled Components", "SPA"],
    },
 
    {
       id: 5,
-      name: "Tweeter Clone",
-      image_path: "/images/tweetme.jpg",
-      deployed_url: "http://sumaxtweetme.pythonanywhere.com/",
-      github_url: "https://github.com/Dey-Sumit/tweetme",
-      category: ["django", "react"],
+      name: "GPT-3 Web",
+      image_path: "/images/landing1.png",
+      deployed_url: "https://landing1.saidn.ml",
+      github_url: "https://github.com/saidnahum/prod-react-gpt3-landing",
+      category: ["react", "css", "spa"],
       description:
-         "First Django Project :) | Typical Social Media App where one can post,like ,comment etc",
-      tags: ["React", "Django", "Django REST API"],
+         "Aplicación Web de Página Única desarrollada con React Js y Css, responsiva y colores únicos",
+      tags: ["React", "Css", "SPA"],
    },
 
    {
       id: 6,
-      name: "Color Classification using tf.js",
-      image_path: "/images/color.jpg",
-      deployed_url: "!#",
-      github_url: "https://github.com/Dey-Sumit/color-classification",
-      category: ["express"],
+      name: "Plataforma PixelWeb",
+      image_path: "/images/pixelweb.png",
+      deployed_url: "https://landing2.saidn.ml/",
+      github_url: "https://github.com/saidnahum/prod-react-pixelweb-landing",
+      category: ["react", "tailwind", "spa"],
       description:
-         "Tried ML with JS :) | this app classifies a color using CNN algorithm in browser",
-      tags: ["Express", "TensorFlow.js", "Vanilla js"],
+         "Página Web para una plataforma creativa para desarollo UX/UI",
+      tags: ["React", "Tailwind", "SPA"],
    },
    {
       id: 7,
-      name: "YouTube using YouTube ",
-      image_path: "/images/youtubeClone.png",
-      deployed_url: "https://not-utube.web.app/",
-      github_url: "https://github.com/Dey-Sumit/youtube-clone-tutorial-up",
-      category: ["express"],
+      name: "Pixel Blog",
+      image_path: "/images/pixelblog.png",
+      deployed_url: "https://pixelblog.saidn.ml/",
+      github_url: "https://github.com/saidnahum/prod-next-graphcms-blog",
+      category: ["next", "tailwind", "cms"],
       description:
-         'Full(almost) Functional YouTube replica where one can login with his/her youtube account to enjoy "not-YouTube".User can like a video,comment on a video & Much More ',
-      tags: [
-         "React",
-         "Redux",
-         "Firebase Auth",
-         "YouTube API",
-         "Sass",
-         "Bootstrap",
-      ],
+         "Blog desarrollado con Next Js como Frontend, GraphCMS como Backend y Tailwind CSS",
+      tags: ["Blog", "Next", "Strapi", "Tailwind", "GraphQL"],
    },
    {
       id: 8,
-      name: "Football App",
-      image_path: "/images/football.png",
-      deployed_url: "https://o-my-goal.web.app/",
-      github_url: "https://github.com/Dey-Sumit/football-app",
-      category: ["react"],
+      name: "SaidN Portafolio/Blog",
+      image_path: "/images/portafolio.png",
+      deployed_url: "https://portfolio.saidn.ml/",
+      github_url: "https://github.com/saidnahum/prod-next-graphcms-portfolio",
+      category: ["next", "tailwind", "cms"],
       description:
-         "o my goal replica where an user can keep an eye on his favorite club.This app will keep providing \n all the statistics of that club.all the fans can also chat ",
-      tags: ["React", "Redux", "Firebase Auth", "API", "Sass", "Bootstrap"],
+         "Portafolio de Trabajo y Blog desarrollado con Next Js como Frontend, GraphCMS como Backend y Tailwind CSS",
+      tags: ["Blog", "Next", "Strapi", "Tailwind", "GraphQL"],
+   },
+   {
+      id: 9,
+      name: "Portafolio Irene Ledesma",
+      image_path: "/images/irene.png",
+      deployed_url: "https://ireneledesma.com.mx/",
+      github_url: "#",
+      category: ["javascript"],
+      description:
+         "Portafolio de Trabajo y Blog desarrollado con Next Js como Frontend, GraphCMS como Backend y Tailwind CSS",
+      tags: ["Vanilla JS", "Css"],
    },
 ];

@@ -16,14 +16,12 @@ export default function Home({endpoint}) {
 			</Head>
 			
 			<h5 className='text-center sm:text-left'> 
-				I am currently pursuing B.Tech Degree(Final Year) in Computer Science
-				Engineering from Academy of Technology. I have 3+ years of experience in
-				Web Development and I have a Youtube Channel where I teach Full Stack
-				Web Development
+				Soy un Desarrollador Web Independiente originario de México 🇲🇽, especializado en tecnologías JavaScript Full Stack y creación de Sistemas Gestores de Contenido (CMS).
+				Desarrollo principal en React JS junto con TailwindCSS.
 			</h5>
 
 			<div className='p-4 mt-5 bg-gray-400 dark:bg-dark-100 ml-[-1.5rem] mr-[-1.5rem] flex-grow'>
-				<h6 className='my-5 mb-10 text-xl font-bold tracking-wide'>What I Offer</h6>
+				<h6 className='text-2xl font-bold tracking-wide text-center mb-5'>Servicios</h6>
 				
 				<motion.div className='grid lg:grid-cols-2 gap-6' variants={stagger} initial='initial' animate='animate'>
 					{
