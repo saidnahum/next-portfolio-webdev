@@ -21,7 +21,7 @@ export default function Home({endpoint}) {
 			</h5>
 
 			<div className='p-4 mt-5 bg-gray-400 dark:bg-dark-100 ml-[-1.5rem] mr-[-1.5rem] flex-grow'>
-				<h6 className='text-2xl font-bold tracking-wide text-center mb-5'>Servicios</h6>
+				<h6 className='text-2xl font-bold tracking-wide text-center mb-5 xl:mb-10 xl:my-5'>Servicios</h6>
 				
 				<motion.div className='grid lg:grid-cols-2 gap-6' variants={stagger} initial='initial' animate='animate'>
 					{

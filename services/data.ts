@@ -98,12 +98,12 @@ export const tools: ISkill[] = [
    {
       Icon: BsCircleFill,
       name: "Illustrator",
-      level: "60",
+      level: "40",
    },
    {
       Icon: BsCircleFill,
       name: "Capture One",
-      level: "45",
+      level: "60",
    },
 ];
 

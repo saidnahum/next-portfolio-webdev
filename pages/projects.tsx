@@ -44,7 +44,7 @@ const Projects = () => {
                      className='col-span-12 sm:col-span-6 lg:col-span-4 p-2 bg-gray-200 dark:bg-dark-200 rounded-lg'
                      variants={fadeInUp}
                   >
-                     <ProjectCardModal project={project} showDetail={showDetail} setShowDetail={setShowDetail} />
+                     <div className='transition duration-300 hover:scale-105'><ProjectCardModal project={project} showDetail={showDetail} setShowDetail={setShowDetail} /></div>
                   </motion.div>
                ))
             }

@@ -14,7 +14,7 @@ const Sidebar = () => {
       setTheme(theme==='light' ? 'dark' : 'light')
    }
 
-   const email = 'saidn@gmail.com';
+   const email = 'saidnahum.dev@gmail.com';
 
    return (
       <div>
@@ -46,17 +46,17 @@ const Sidebar = () => {
 
          {/* Social Icons */}
          <div className='flex justify-around mx-auto my-5 text-green w-9/12 md:w-full'>
-            <a href="">
+            {/* <a>
                <YoutubeICon className='w-8 h-8 cursor-pointer'/>
-            </a>
+            </a> */}
 
-            <a href="">
+            <a href='https://github.com/saidnahum' target='_blank'>
                <GithubIcon className='w-8 h-8 cursor-pointer'/>
             </a>
 
-            <a href="">
+            {/* <a>
                <LinkedinIcon className='w-8 h-8 cursor-pointer'/>
-            </a>
+            </a> */}
          </div>
 
          {/* Adress */}
@@ -70,14 +70,14 @@ const Sidebar = () => {
 
          {/* Buttons */}
          <button 
-            className='bg-gradient-to-r from-green to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2 focus:outline-none'
+            className='bg-gradient-to-r from-green to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2 focus:outline-none transition duration-300 md:hover:scale-110'
             onClick={() => window.open(`mailto:${email}`)}
          >
             Contacto
          </button>
 
          <button 
-            className='bg-gradient-to-r from-green to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2'
+            className='bg-gradient-to-r from-green to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2 transition duration-300 md:hover:scale-110'
             onClick={changeTheme}
          >
             {
